@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>🎲 Tài Xỉu VIP - LC79, BetVip & HayWin</title>
+    <title>🎲 Tài Xỉu VIP - LC79, BetVip, Luck8 & HayWin</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
     <style>
         :root {
@@ -151,7 +151,7 @@
                 <span class="logo">🎲</span>
                 <div>
                     <h1>Tài Xỉu <span>API</span> <span class="vip-badge">👑 VIP</span></h1>
-                    <div class="sub">📊 LC79 · BetVip · HayWin – Chi tiết từng phiên</div>
+                    <div class="sub">📊 LC79 · BetVip · Luck8 · HayWin – Chi tiết từng phiên</div>
                 </div>
             </div>
             <div class="header-right">
@@ -196,6 +196,18 @@
                 }
             },
             {
+                id: 'luck8',
+                name: 'Luck8',
+                accent: '#a855f7',
+                accentLight: '#c084fc',
+                accentGlow: 'rgba(168,85,247,0.25)',
+                modes: ['taixiu', 'taixiu_md5'],
+                historyUrls: {
+                    taixiu: '/api/luck8/taixiu',
+                    taixiu_md5: '/api/luck8/taixiu_md5'
+                }
+            },
+            {
                 id: 'haywin',
                 name: 'HayWin',
                 accent: '#ff6b6b',
@@ -203,8 +215,8 @@
                 accentGlow: 'rgba(255,107,107,0.25)',
                 modes: ['taixiu', 'taixiu_md5'],
                 historyUrls: {
-                    taixiu: '/haywin/history',
-                    taixiu_md5: '/haywinmd5/history'
+                    taixiu: '/api/haywin/taixiu',
+                    taixiu_md5: '/api/haywin/taixiu_md5'
                 }
             }
         ];
